@@ -1,0 +1,12 @@
+CREATE DATABASE ng_news_db;
+USE ng_news_db;
+
+CREATE TABLE news(
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(180),
+    description VARCHAR(500),
+    image VARCHAR(200),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DESCRIBE news;
